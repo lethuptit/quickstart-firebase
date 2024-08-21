@@ -1,13 +1,13 @@
 import { initializeApp } from 'firebase/app';
 import { MessagePayload, deleteToken, getMessaging, getToken, onMessage } from 'firebase/messaging';
-import { firebaseConfig, vapidKey } from './config';
+import { firebaseConfig, vapidKey, IID_TOKEN } from './config';
 
 initializeApp(firebaseConfig);
 
 const messaging = getMessaging();
 
 // IDs of divs that display registration token UI or request permission UI.
-const tokenDivId = 'token_div';
+const tokenDivId = "token_div";
 const permissionDivId = 'permission_div';
 
 // Handle incoming messages. Called when:
@@ -46,7 +46,7 @@ function resetUI() {
 
 function showToken(currentToken: string) {
   // Show token in console and UI.
-  const tokenElement = document.querySelector('#token')!;
+  let tokenElement = document.querySelector('#token');
   tokenElement.textContent = currentToken;
 }
 

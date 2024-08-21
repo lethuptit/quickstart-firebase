@@ -28,6 +28,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "firebase": "^10.1.0"
+    "firebase": "^10.1.0",
+    "quickstart-js-messaging": "file:",
+    "react-toastify": "^10.0.5"
   }
 }
