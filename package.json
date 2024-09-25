@@ -24,5 +24,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "scripts/test.sh"
+  },
+  "dependencies": {
+    "quickstart-js": "file:"
   }
 }

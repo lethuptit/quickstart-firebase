@@ -8,5 +8,8 @@
   },
   "author": "",
   "license": "Apache-2.0",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "scripts": "file:"
+  }
 }

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "firebase": "^10.1.0",
-    "jsrsasign": "^10.8.6"
+    "jsrsasign": "^10.8.6",
+    "quickstart-js-auth": "file:"
   }
 }
